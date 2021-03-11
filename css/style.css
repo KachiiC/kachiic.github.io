@@ -45,54 +45,21 @@ a:focus {
     text-decoration: none;
 }
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+
+.site-grid-system {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.clearfix {
-    display: inline-block;
+.site-col-4 {
+    grid: span 4;
 }
 
-* html .clearfix {
-    height: 1%;
-}
-
-.clearfix {
-    display: block;
+.site-border {
+    border: 1px solid black;
 }
 
 /* Home Style */
-#tf-home {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #cfcfcf;
-}
-
-#tf-home .overlay {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
-    /* IE6-9 */
-    height: auto;
-    background-attachment: fixed;
-}
 
 .content {
     padding: 15% 0 18% 0;
@@ -126,7 +93,7 @@ a:focus {
     padding: 1% 0;
 }
 
-#tf-menu.navbar-default .navbar-nav > li > a {
+#tf-menu .navbar-default .navbar-nav > li > a {
     color: #C5C5C5;
     text-transform: uppercase;
     font-size: 12px;
@@ -144,7 +111,15 @@ a:focus {
     font-family: 'Playball', cursive;
 }
 
-#tf-service {
+#profile-intro,
+#profile-languages,
+#profile-portfolio,
+#profile-about-me {
+    min-height: 100%;
+}
+
+
+#profile-languages {
     padding: 7% 0;
 }
 
@@ -161,7 +136,7 @@ a:focus {
     color: rgb(47, 147, 123);
 }
 
-#tf-portfolio {
+#profile-portfolio {
     background: #f1f1f1;
     padding: 5% 0 8% 0;
     text-align: center;
@@ -256,7 +231,7 @@ ul.cat.list-inline li a:hover {
     padding: 0;
 }
 
-#tf-about {
+#profile-intro {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -264,13 +239,7 @@ ul.cat.list-inline li a:hover {
     color: #222222;
 }
 
-#tf-about .overlay {
-    height: auto;
-    background-attachment: fixed;
-    padding: 10% 0;
-}
-
-#tf-why-me {
+#profile-about-me {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -278,13 +247,13 @@ ul.cat.list-inline li a:hover {
     color: #222222;
 }
 
-#tf-why-me .overlay {
+#profile-about-me .overlay {
     height: auto;
     background-attachment: fixed;
     padding: 5% 0;
 }
 
-ul.why-me li {
+ul.about-me li {
     margin: 10px 0;
 }
 
