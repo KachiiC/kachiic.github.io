@@ -7,173 +7,110 @@
     <meta name="description" content="Kachi Cheong's Portfolio of Skills">
     <title>Kachi Cheong's Portfolio</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./kachi_css.css">
+    <link rel="stylesheet" type="text/css" href="./test.css">
 
 </head>
 
 <body>
-    <!-- Navbar Start-->
-    <div id="sticky-anchor" />
-    <nav id="tf-menu" class="navbar navbar-default">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand logo" href="index.html">Portfolio</a>
-            </div>
+    <!--    Navbar-->
+    <nav>
+        <div class="nav-logo">
+            <a href="#">Kachi Cheong's Portfolio</a>
+        </div>
+        <div class="nav-menus">
+            <a href="#introduction">Introduction</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#tf-home">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#tf-service">Languages</a>
-                    </li>
-                    <li>
-                        <a href="#tf-portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#tf-about">More</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
-    <!-- Navbar End -->
-    <!-- About section start -->
-    <div id="profile-intro">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-6">
-                <h3>About Kachi</h3>
-                <br>
-                <p>
-                    My Name is Kacheok Cheong, but my friends call me <b>Kachi</b>! I am a self taught developer from London, web development is my passion.
-                </p>
-                <br>
+    <main>
+        <!-- INTRODUCTION -->
+        <div id="introduction" class="site-grid-system">
+            <div class="site-span-6 intro-image-container">
+                <img src='./img/IMG_3007.JPG' class="site-responsive-image" />
+            </div>
+            <div class="site-span-6 intro-caption-container">
+                <h2>Kachi Cheong</h2>
+                <p>My name is <b>Kacheok Cheong</b>, but my friends call me <b>Kachi</b>! I am a self taught developer from London, web development is my passion.</p>
             </div>
         </div>
-    </div>
-    <!-- About section end -->
-    <!-- Languages section start -->
-    <div id="profile-languages">
-        <div class="col-md-4">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <i class="fa fa-gears"></i>
+        <!-- SKILLS -->
+        <div id="skills" class="site-grid-system">
+            <div class="site-span-12">
+                <div id="skillsBtnContainer">
+                    <button class="filter-btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="filter-btn" onclick="filterSelection('frontend')">Frontend</button>
+                    <button class="filter-btn" onclick="filterSelection('backend')">Backend</button>
+                    <button class="filter-btn" onclick="filterSelection('languages')">Languages</button>
+                    <button class="filter-btn" onclick="filterSelection('frameworks')">Frameworks</button>
+                    <button class="filter-btn" onclick="filterSelection('libraries')">CSS</button>
+                    <button class="filter-btn" onclick="filterSelection('others')">Others</button>
                 </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Coding Languages </h4>
-                    <p>
-                        Aside from HTML, CSS and Vanilla JS, I am comfortable with using Python and SQL. My preferred frameworks include Django (restframework) and React JS. I am experinced at using github, heroku and terminal. My preferred code editor is VS Studio Code and Pycharm (for django).
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <i class="fa fa-gears"></i>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Frontend Development</h4>
-                    <p>
-                        My preferred framework for frontend development is React. My skills including fetching data from APIs, creating dynamically displaying data and creative responsive pages. Not only am I proficent at using component libraries such as bootstrap and material ui, I can also build my own reusable components.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <i class="fa fa-gears"></i>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Backend Development</h4>
-                    <p>
-                        My preferred framework for backend development is Django Rest Framework. My skills include Webscrapping, using requests to store data from external apis, creating django commands and caching data. I prefer to create my own APIs to limit calls to external APIs and it gives me more control of the data I'm returning.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--    Languages section end -->
-    <div id="profile-portfolio">
-        <div class="section-title">
-            <h3>My Latest Works</h3>
-            <hr>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="img/basically_mma.png" class="img-responsive">
-            </div>
-            <div class="col-md-6">
-                <img src="img/kachiis-rest.png" class="img-responsive">
-            </div>
-        </div>
-        <div class="row toppadding">
-            <div class="col-md-6">
-                <img src="img/React%20Portfolio.png" class="img-responsive">
-            </div>
-            <div class="col-md-6">
-                <img src="img/Snuggle_bunny.png" class="img-responsive">
-            </div>
-        </div>
-    </div>
-    <div id="profile-about-me">
-        <div class="overlay">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>More about me</h3>
-                    <br />
-                    <ul class="list-inline about-me">
-                        <li>
-                            <h4>Interests</h4>
-                            <p>
-                                A lot of my time is spent sharpening my coding skills and current I am learning typescript and express JS. Outside of coding, I am a huge fan of combat sports and creating a website which teachers beginners about mixed martial arts.
-                            </p>
-                        </li>
-                        <li>
-                            <h4>Free Lancing</h4>
-                            <p>Currently I am helping a few startups and small businesses with personalizing their shopify accounts.</p>
-                        </li>
-                        <li>
-                            <h4>Aspirations</h4>
-                            <p>
-                                My goal is to eventually own a successful mma website, which i am currently working on!
-                            </p>
-                        </li>
-                    </ul>
+
+                <div class="skills-list-container">
+                    <!-- Frameworks -->
+                    <div class="filterDiv frameworks frontend">React</div>
+                    <div class="filterDiv frameworks frontend backend">Django</div>
+                    <div class="filterDiv frameworks frontend">Typescript</div>
+                    <!-- Frontend-->
+                    <div class="filterDiv frontend">Redux</div>
+                    <div class="filterDiv frontend">API Fetch</div>
+                    <!-- Backend-->
+                    <div class="filterDiv backend">Rest Framework</div>
+                    <div class="filterDiv backend">Webscraping</div>
+                    <div class="filterDiv backend">Django Caching</div>
+                    <div class="filterDiv backend">Django Commands</div>
+                    <div class="filterDiv backend">PyTest</div>
+                    <!-- CSS -->
+                    <div class="filterDiv libraries">Google API</div>
+                    <div class="filterDiv libraries">Rapid API</div>
+                    <div class="filterDiv libraries">Material UI</div>
+                    <div class="filterDiv libraries">Bootstrap</div>
+                    <!-- Languages -->
+                    <div class="filterDiv languages">Python</div>
+                    <div class="filterDiv languages">Javascript</div>
+                    <div class="filterDiv languages">JSX</div>
+                    <div class="filterDiv languages">SQL</div>
+                    <div class="filterDiv languages">ES6</div>
+                    <div class="filterDiv languages">HTML</div>
+                    <div class="filterDiv languages">CSS</div>
+                    <!-- Others -->
+                    <div class="filterDiv others">Git</div>
+                    <div class="filterDiv others">Postgres</div>
+
                 </div>
             </div>
-        </div>
-    </div>
-    <nav id="tf-footer">
-        <div class="pull-left">
-            <p>Designed by Kachi Cheong</p>
-        </div>
-        <div class="pull-right">
-            <ul class="social-media list-inline">
-                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
-                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
-                <li><a href="#"><span class="fa fa-behance"></span></a></li>
-            </ul>
         </div>
 
-    </nav>
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <!-- Javascripts -->
-    <script type="text/javascript" src="js/main.js"></script>
-
+        <!-- PORTFOLIO -->
+        <div id="Portfolio" class="site-grid-system">
+            <div class="site-span-6">
+                Project 1
+            </div>
+            <div class="site-span-6">
+                Project 2
+            </div>
+            <div class="site-span-6">
+                Project 3
+            </div>
+            <div class="site-span-6">
+                Project 4
+            </div>
+        </div>
+        <!-- HOBBIES AND INTERESTS -->
+        <div id="hobbies" class="site-grid-system">
+            HOBBIES AND INTERESTS
+        </div>
+    </main>
+    <footer>
+        <h1>
+            Footer
+        </h1>
+    </footer>
+    <script src="./test.js"></script>
 </body>
 
 </html>

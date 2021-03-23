@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-logo a {
+    float: left;
+    font-size: 25px;
+    padding: 10px 45px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.nav-menus {
+    float: right;
+    display: flex;
+}
+
+.nav-menus a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-menus a:hover {
+    background: #ddd;
+    color: black;
+}
+
+main {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/****** INTRODUCTION *****/
+
+#introduction {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+.intro-image-container {
+    width: 40%;
+    margin: 25px auto;
+}
+
+.intro-caption-container {
+    padding: 50px;
+}
+
+.intro-caption-container h2 {
+    text-align: center
+}
+
+/****** SKILLS *****/

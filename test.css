@@ -1,0 +1,45 @@
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 110px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    display: none;
+    font-size: 14px;
+}
+
+#skillsBtnContainer {
+    text-align: center
+}
+
+.show-skill {
+    display: block;
+}
+
+.skills-list-container {
+    width: 95%;
+    margin: 25px auto;
+    overflow: hidden;
+    min-height: 150px;
+}
+
+/* Style the buttons */
+.filter-btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.filer-btn:hover {
+    background-color: #ddd;
+}
+
+.filter-btn.active {
+    background-color: #666;
+    color: white;
+}
