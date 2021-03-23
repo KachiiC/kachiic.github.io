@@ -42,6 +42,17 @@ main {
     width: 100%;
 }
 
+#introduction,
+#skills,
+#portfolio {
+    margin-bottom: 25px !important;
+}
+
+#skills h1,
+#portfolio h1 {
+    text-align: center;
+}
+
 /****** INTRODUCTION *****/
 
 #introduction {
@@ -64,3 +75,75 @@ main {
 }
 
 /****** SKILLS *****/
+
+/** Skills buttons **/
+
+.skills-description {
+    width: 80%;
+    margin: 0px auto 25px;
+}
+
+.skills-description h4 {
+    text-align: center;
+}
+
+
+#skillsBtnContainer {
+    text-align: center;
+    display: block;
+}
+
+.filter-btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.filer-btn:hover {
+    background-color: #ddd;
+}
+
+.filter-btn.active {
+    background-color: #666;
+    color: white;
+}
+
+/** Skills List **/
+
+.skills-list-container {
+    width: 80%;
+    margin: 25px auto;
+    overflow: hidden;
+    min-height: 150px;
+    text-align: center;
+}
+
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 110px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    display: none;
+}
+
+.show-skill {
+    display: block;
+}
+
+/****** PORTFOLIO *****/
+
+#portfolio .portfolio-component {
+    margin: 0px auto 25px;
+    width: 90%;
+}
+
+#portfolio .portfolio-component h2 {
+    text-align: center;
+}
