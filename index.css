@@ -74,6 +74,10 @@ main {
     text-align: center
 }
 
+.intro-caption-container p {
+    font-size: 18px;
+}
+
 /****** SKILLS *****/
 
 /** Skills buttons **/

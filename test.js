@@ -1,46 +1,29 @@
-// SKILLS JS
+// Get the modal
+var modal = document.getElementsByClassName('modal');
 
-filterSelection("all")
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("myBtn");
 
-function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("filterDiv");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-        skillsRemoveClass(x[i], "show-skill");
-        if (x[i].className.indexOf(c) > -1) skillsAddClass(x[i], "show-skill");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal 
+for (var i = 0; i < btn.length; i++;) {
+    btn[i].onclick = function () {
+        modal[i].style.display = "block";
     }
 }
 
-function skillsAddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-        }
+// When the user clicks on <span> (x), close the modal
+for (var i=0; i < btn.length; i++;) {
+    span[0].onclick = function () {
+        modal[0].style.display = "none";
     }
 }
 
-function skillsRemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
-    element.className = arr1.join(" ");
-}
-
-var btnContainer = document.getElementById("skillsBtnContainer");
-var btns = btnContainer.getElementsByClassName("filter-btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
 }
