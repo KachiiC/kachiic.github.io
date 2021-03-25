@@ -17,6 +17,19 @@
     .portfolio-component {
         grid-column: span 12 !important;
     }
+
+    /** SKILLS **/
+    .more-about,
+    .interest-experience {
+        grid-column: span 12 !important;
+
+    }
+
+    .more-about p,
+    .interest-experience p {
+        width: 60%;
+        margin: 25px auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -51,39 +64,15 @@
     }
 
     /** PORTFOLIO **/
+    
+    /** SKILLS **/
 
-}
-
-@media screen and (max-width: 640px) {
-
-    /** NAVBAR **/
-    .nav-menus {
-        display: none;
+    .more-about p,
+    .interest-experience p {
+        width: 80%;
+        margin: 25px auto;
     }
 
-    /** INTRODUCTION **/
-    .intro-image-container,
-    .intro-caption-container {
-        grid-column: span 12 !important;
-    }
 
-    .intro-caption-container {
-        padding: 0px 25px;
-    }
-
-    /*** SKILLS ***/
-    #skillsBtnContainer {
-        display: none;
-    }
-
-    .skills-list-container {
-        width: 90%;
-    }
-
-    .filterDiv {
-        display: block;
-    }
-
-    /** PORTFOLIO **/
 
 }

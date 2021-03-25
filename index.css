@@ -151,3 +151,16 @@ main {
 #portfolio .portfolio-component h2 {
     text-align: center;
 }
+
+/****** ABOUT *****/
+#about h1,
+.more-about h3,
+.interest-experience h3 {
+    text-align: center;
+}
+
+.more-about p,
+.interest-experience p {
+    width: 80%;
+    margin: 10px auto;
+}
