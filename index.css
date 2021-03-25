@@ -63,7 +63,7 @@ main {
 
 .intro-image-container {
     width: 40%;
-    margin: 25px auto;
+    margin: auto;
 }
 
 .intro-caption-container {
@@ -120,7 +120,7 @@ main {
     width: 80%;
     margin: 25px auto;
     overflow: hidden;
-    min-height: 150px;
+    min-height: 190px;
     text-align: center;
 }
 

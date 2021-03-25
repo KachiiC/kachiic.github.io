@@ -1,9 +1,10 @@
 @media screen and (max-width: 1080px) {
 
     /** INTRODUCTION **/
-    .intro-image-container {
-        width: 60%;
-        margin: 25px auto;
+    .intro-image-container,
+    .intro-caption-container {
+        grid-column: span 12 !important;
+        margin: 25px auto 0px;
     }
 
     /*** SKILLS ***/
