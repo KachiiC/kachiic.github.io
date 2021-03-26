@@ -13,6 +13,10 @@
         margin-bottom: 15px;
     }
 
+    .skills-indicator {
+        font-size: 12px;
+    }
+
     /** PORTFOLIO **/
     .portfolio-component {
         grid-column: span 12 !important;
@@ -50,6 +54,11 @@
     }
 
     /*** SKILLS ***/
+
+    .skills-indicator {
+        font-size: 10px;
+    }
+
     #skillsBtnContainer {
         display: none;
     }
