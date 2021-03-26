@@ -164,3 +164,19 @@ main {
     width: 80%;
     margin: 10px auto;
 }
+
+/****** FOOTER *****/
+
+footer {
+    border-top: 1px solid black;
+    margin-top: 25px;
+}
+.icons-container {
+    width: 80%;
+    margin: auto;
+    text-align: center
+}
+
+.icons-container i{
+    margin: 10px 25px;
+}
