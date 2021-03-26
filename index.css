@@ -170,13 +170,22 @@ main {
 footer {
     border-top: 1px solid black;
     margin-top: 25px;
+    background-color: #333;
 }
+
+footer h2{
+    color: #f2f2f2;
+    text-align: center;
+}
+
 .icons-container {
     width: 80%;
     margin: auto;
-    text-align: center
+    text-align: center;
+    color: #f2f2f2;
 }
 
 .icons-container i{
     margin: 10px 25px;
+    color: #f2f2f2;
 }
