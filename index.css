@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: 'Cutive Mono', monospace;
 }
 
 nav {
@@ -133,9 +134,11 @@ main {
     margin: 5px;
     padding: 10px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 12px;
     display: none;
 }
+
+
 
 .show-skill {
     display: block;
@@ -153,9 +156,9 @@ main {
 }
 
 /****** ABOUT *****/
-#about h1,
-.more-about h3,
-.interest-experience h3 {
+#about,
+.more-about,
+.interest-experience {
     text-align: center;
 }
 
@@ -163,6 +166,7 @@ main {
 .interest-experience p {
     width: 80%;
     margin: 10px auto;
+    text-align: start !important;
 }
 
 /****** FOOTER *****/
