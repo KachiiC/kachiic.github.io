@@ -17,202 +17,26 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="nav-logo">
-            <a href="#">Kachi Cheong's Portfolio</a>
-        </div>
-        <div class="nav-menus">
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#about">About</a>
-        </div>
-    </nav>
     <main>
-        <!-- INTRODUCTION -->
-        <div id="introduction" class="site-grid-system">
-            <div class="site-span-6 intro-image-container">
-                <img src='./img/IMG_3007.JPG' class="site-responsive-image" />
-            </div>
-            <div class="site-span-6 intro-caption-container">
-                <h2>Kachi Cheong</h2>
-                <p>
-                    My name is <b>Kacheok Cheong</b>, but my friends call me <b>Kachi</b>! I am a self taught developer from London, web development is my passion.
-                </p>
-                <p>
-                    As a full stack developer, I am comfortable building a range of different web apps. My frontend skills include using React, redux, typescript and using fetch. My preferred backend language is python and using django restframework. With Django RF I can create django commands, cache data, webscrape and run tests using PyTest.
-                </p>
-                <p>
-                    Currently I am working on a few shopify startup e-commerce and designing my own MMA website using React and django RF.
-                </p>
-            </div>
-        </div>
-        <!-- SKILLS -->
-        <div id="skills" class="site-grid-system">
-            <h1 class="site-span-12">Skills</h1>
-            <div class="site-span-4 skills-description">
-                <h4>Frontend Development</h4>
-                <p>
-                    Although I'm comfortable building a static website using html, css and vanilla js. I prefer using frameworks such as django and react. Although I'm capable of building a full stack applications using django, my preferred frontend framework is React. With React I am comfortable with using component libraries such as Bootstrap and Material UI but often I prefer to create and reusable my own components.
-                </p>
-                <p>Currently, I am learning node, redux and typescript to improve my frontend skills.</p>
-            </div>
-            <div class="site-span-4 skills-description">
-                <h4>Backend Development</h4>
-                <p>
-                    As django was the first framework I used, naturally I gravitated towards Django restframework as I began to learn about APIs. I am comfortable with creating backend servers to feed to my frontend apps. With Django RF I am comfortable populating my data through POST requests, using CSV/JSON files to populate my database or making request to existing API (such as google or rapid api) to create data. I am also comfortable with caching data.
-                </p>
-                <p>Currently, I am learning ExpressJs to build fullstack applications in the future.</p>
-            </div>
-            <div class="site-span-4 skills-description">
-                <h4>Other Skills</h4>
-                <p>
-                    Aside from my full stack skills, I am proficent with python. With python I a can write django commands, webscrape data and write tests using PyTest. As I use React for most of my projects, i am proficent in ES6, fetch from various apis and using different component libraries. My understanding SQL is good (although it is not something I often use) and I am very comfortable with handling JSON files.
-                </p>
-                <p>I have no problem when using Github, Heroku, Postgres, PyCharm and VScode.</p>
-            </div>
-            <div class="site-span-12">
-                <div id="skillsBtnContainer">
-                    <button class="filter-btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="filter-btn" onclick="filterSelection('frontend')">Frontend</button>
-                    <button class="filter-btn" onclick="filterSelection('backend')">Backend</button>
-                    <button class="filter-btn" onclick="filterSelection('languages')">Languages</button>
-                    <button class="filter-btn" onclick="filterSelection('frameworks')">Frameworks</button>
-                    <button class="filter-btn" onclick="filterSelection('libraries')">CSS</button>
-                    <button class="filter-btn" onclick="filterSelection('others')">Others</button>
-                </div>
-                <div class="skills-indicator">
-                    Indicators:
-                    <div class="skill-level">
-                        Learning:
-                        <div class="skill-indicator-square learning"></div>
+        <div class="site-grid-system text-center">
+            <div class="site-col-6">
+                <a href="https://kachiic.github.io/kach_portfolio" target="_blank">
+                    <div class="frontend">
+                        <h1>Kachi's Frontend Portfolio</h1>
+                        <i class="fab fa-react fa-5x"></i>
                     </div>
-                    <div class="skill-level">
-                        Comfortable:
-                        <div class="skill-indicator-square comfortable"></div>
-
+                </a>
+            </div>
+            <div class="site-col-6">
+                <a href="https://kachiis-rest.herokuapp.com/" target="_blank">
+                    <div class="backend">
+                        <h1>Kachi's Backend Portfolio</h1>
+                        <i class="fab fa-python fa-5x"></i>
                     </div>
-                    <div class="skill-level">
-                        Proficient:
-                        <div class="skill-indicator-square proficient"></div>
-                    </div>
-                </div>
-                <div class="skills-list-container">
-                    <!-- Frameworks -->
-                    <div class="filterDiv proficient frameworks frontend">React</div>
-                    <div class="filterDiv proficient frameworks frontend backend">Django</div>
-                    <div class="filterDiv learning frameworks frontend">Typescript</div>
-                    <div class="filterDiv learning frameworks">Node</div>
-                    <!-- Frontend-->
-                    <div class="filterDiv learning frontend">Redux</div>
-                    <div class="filterDiv proficient frontend">API Fetch</div>
-                    <!-- Backend-->
-                    <div class="filterDiv proficient backend">Rest Framework</div>
-                    <div class="filterDiv proficient backend">Webscraping</div>
-                    <div class="filterDiv comfortable backend">Django Caching</div>
-                    <div class="filterDiv proficient backend">Django Commands</div>
-                    <div class="filterDiv comfortable backend">PyTest</div>
-                    <!-- CSS -->
-                    <div class="filterDiv comfortable libraries">Google API</div>
-                    <div class="filterDiv proficient libraries">Rapid API</div>
-                    <div class="filterDiv proficient libraries">Material UI</div>
-                    <div class="filterDiv proficient libraries">Bootstrap</div>
-                    <!-- Languages -->
-                    <div class="filterDiv proficient languages">Python</div>
-                    <div class="filterDiv proficient languages">Javascript</div>
-                    <div class="filterDiv proficient languages">JSX</div>
-                    <div class="filterDiv comfortable languages">SQL</div>
-                    <div class="filterDiv proficient languages">ES6</div>
-                    <div class="filterDiv proficient languages">HTML</div>
-                    <div class="filterDiv proficient languages">CSS</div>
-                    <!-- Others -->
-                    <div class="filterDiv comfortable others">Git</div>
-                    <div class="filterDiv comfortable others">Heroku</div>
-                    <div class="filterDiv comfortable others">Postgres</div>
-                </div>
-            </div>
-        </div>
-        <!-- PORTFOLIO -->
-        <!-- portfolio images -->
-        <div id="portfolio" class="site-grid-system">
-            <h1 class="site-span-12">Portfolio</h1>
-            <div class="site-span-6 portfolio-component">
-                <h2>Basically MMA</h2>
-                <a href="https://kachiic.github.io/basically_mma/">
-                    <img src="img/basically_mma.png" class="site-responsive-image" alt="" />
                 </a>
-            </div>
-            <div class="site-span-6 portfolio-component">
-                <h2>Shopify E-commerce</h2>
-                <a href="https://www.snugglebunnyclothing.com/">
-                    <img src="img/Snuggle_bunny.png" class="site-responsive-image" alt="" />
-                </a>
-            </div>
-            <div class="site-span-6 portfolio-component">
-                <h2>React Portfolio</h2>
-                <a href="https://kachiic.github.io/react_portfolio/">
-                    <img src="img/React%20Portfolio.png" class="site-responsive-image" alt="" />
-                </a>
-            </div>
-            <div class="site-span-6 portfolio-component">
-                <h2>Kachii's Rest</h2>
-                <a href="https://kachiis-rest.herokuapp.com/">
-                    <img src="img/kachiis-rest.png" class="site-responsive-image site-border" alt="" />
-                </a>
-            </div>
-        </div>
-        <!-- ABOUT -->
-        <div id="about" class="site-grid-system">
-            <div class="site-span-12">
-                <h1>About Me</h1>
-            </div>
-            <div class="site-span-6 more-about">
-                <h3>My background</h3>
-                <i class="far fa-grin-beam fa-5x"></i>
-                <p>
-                    I was born in Macau but moved to London when I was 4 years old. Growing up in North London, I went to primary and secondary school in Islington before attending Kingston University for my bachelors degree. In 2014, I graduated from Kingston with a 2:1 in Criminology.
-                </p>
-                <p>
-                    After working for a year in sales, I moved to Beijing to study Mandarin. Before studying, I spent 4 months working as a recruiter for forgein students looking for internship placements. I then spent 18 months learning mandarin (6 months at Peking university and 12 months at Tsinghua univesity). I moved back in London in 2017 and worked as a recruiter before i began to learn coding at the end of 2019.
-                </p>
-            </div>
-            <div class="site-span-3 interest-experience">
-                <h3>Interests</h3>
-                <i class="fas fa-fist-raised fa-5x"></i>
-                <p>
-                    Martial arts is a passion of mine, both watching and trainning. I am a big fan of the UFC and have started training in kick boxing back in 2016. I am currently working on a MMA website which I hope to launch in the near future.
-                </p>
-                <p>
-                    My other interests include football (I am a huge Arsenal fan) and gaming.
-                </p>
-            </div>
-            <div class="site-span-3 interest-experience">
-                <h3>Work Experience</h3>
-                <i class="fa fa-briefcase fa-5x"></i>
-                <p>
-                    Before coding, I worked in recruitment and sales. I worked in direct marketing for a year before working as a intership recruiter in Beijing.
-                </p>
-                <p>
-                    When I moved back to London I worked in recruitment in the education sector for primary schools in westminster and kensington and chelsea.
-                </p>
             </div>
         </div>
     </main>
-    <footer>
-        <h2>My Links</h2>
-        <div class="icons-container">
-            <a href="https://github.com/KachiiC" target="_blank">
-                <i class="fab fa-github fa-5x"> </i>
-            </a>
-            <a href="https://www.linkedin.com/in/kacheok-cheong-a773a0110/" target="_blank">
-                <i class="fab fa-linkedin fa-5x"> </i>
-            </a>
-            <a href="https://www.instagram.com/basically_mma/" target="_blank">
-                <i class="fab fa-instagram fa-5x"> </i>
-            </a>
-        </div>
-    </footer>
-    <script src="./index.js"></script>
 </body>
 
 </html>
