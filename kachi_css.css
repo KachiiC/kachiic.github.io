@@ -203,7 +203,5 @@
 }
 
 @media screen and (max-width: 640px) {
-    .site-col-6 {
-        grid-column: span 12;
-    }
+
 }
