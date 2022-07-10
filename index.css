@@ -1,57 +1,61 @@
 body {
-    margin: 0px;
-    font-family: Sans-serif;
+  display: grid;
+  font-family: Sans-serif;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0px;
 }
 
 h1 {
-    margin: 0px;
+  margin: 0px;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-i {
-    margin: 25px auto;
-}
-
-.site-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+  color: inherit;
+  text-decoration: none;
 }
 
 .card-container {
-    padding: 25% 0px;
+  padding: 25% 0px;
 }
 
 .single-card {
-    grid-column: span 6;
-    text-align: center;
-    height: 100vh;
+  grid-column: span 6;
+  text-align: center;
+  height: 100vh;
 }
 
 .single-card:nth-child(1) {
-    background: black;
-    color: white;
+  background: black;
 }
 
 .single-card:nth-child(2) {
-    background: white;
-    color: black;
+  background: white;
 }
 
+svg {
+  height: 100px;
+  margin: 20px 0px;
+}
 
+.single-card:nth-child(1),
+.react-icon {
+  fill: white;
+  color: white;
+}
 
-@media screen and (max-width: 800px) {
+.single-card:nth-child(2),
+.server-icon {
+  fill: black;
+  color: black;
+}
 
-    .site-col-6 {
-        height: 100%;
-        grid-column: span 12;
-    }
-    
-    .card-container {
-        padding: 75px 0px;
-    }
+@media screen and (max-width: 900px) {
+  .single-card {
+    height: 100%;
+    grid-column: span 12;
+  }
 
+  .card-container {
+    padding: 75px 0px;
+  }
 }
