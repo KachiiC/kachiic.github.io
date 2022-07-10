@@ -16,24 +16,31 @@ i {
     margin: 25px auto;
 }
 
-.site-col-6 {
-    text-align: center;
-    height: 100vh;
-}
-
-.site-col-6:nth-child(1) {
-    background: black;
-    color: white;
-}
-
-.site-col-6:nth-child(2) {
-    background: white;
-    color: black;
+.site-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .card-container {
     padding: 25% 0px;
 }
+
+.single-card {
+    grid-column: span 6;
+    text-align: center;
+    height: 100vh;
+}
+
+.single-card:nth-child(1) {
+    background: black;
+    color: white;
+}
+
+.single-card:nth-child(2) {
+    background: white;
+    color: black;
+}
+
 
 
 @media screen and (max-width: 800px) {
